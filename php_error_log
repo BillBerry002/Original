@@ -1,0 +1,11 @@
+[25-Oct-2024 01:37:24 Europe/Berlin] PHP Warning:  mkdir(): File exists in C:\xampp\htdocs\pos_original\controladores\productos.controlador.php on line 51
+[25-Oct-2024 03:37:36 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\pos_original\modelos\ventas.modelo.php:150
+Stack trace:
+#0 C:\xampp\htdocs\pos_original\modelos\ventas.modelo.php(150): PDOStatement->execute()
+#1 C:\xampp\htdocs\pos_original\controladores\ventas.controlador.php(565): ModeloVentas::mdlRangoFechasVentas('ventas', '2024-10-23', '2024-10-23')
+#2 C:\xampp\htdocs\pos_original\vistas\modulos\ventas.php(126): ControladorVentas::ctrRangoFechasVentas('2024-10-23', '2024-10-23')
+#3 C:\xampp\htdocs\pos_original\vistas\plantilla.php(150): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\pos_original\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos_original\index.php(22): ControladorPlantilla::ctrPlantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\pos_original\modelos\ventas.modelo.php on line 150
